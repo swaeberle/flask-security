@@ -15,7 +15,6 @@ msgstr ""
 "PO-Revision-Date: 2022-04-05 13:50+0200\n"
 "Last-Translator: Stephan Wurm <stephan.wurm@a-eberle.de\n"
 "Language: de_DE\n"
-"Language-Team: de_DE <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -159,8 +158,8 @@ msgid ""
 "An error occurred while communicating with the Oauth provider: "
 "(%(exerror)s - %(exdesc)s). Please try again."
 msgstr ""
-"Es trat ein Fehler bei der Kommunikation mit dem OAuth-Provider auf. "
-"Bitte versuchen Sie es erneut."
+"Es trat ein Fehler bei der Kommunikation mit dem OAuth-Provider auf: "
+"(%(exerror)s - %(exdesc)s). Bitte versuchen Sie es erneut."
 
 #: flask_security/core.py:454
 msgid "Password does not match"
@@ -212,7 +211,7 @@ msgstr ""
 #: flask_security/core.py:474
 #, python-format
 msgid "You did not confirm your email within %(within)s. "
-msgstr "Sie haben Ihre E-Mail-Adresse nich innerhalb von $(within)s bestätigt."
+msgstr "Sie haben Ihre E-Mail-Adresse nich innerhalb von %(within)s bestätigt. "
 
 #: flask_security/core.py:479
 #, python-format
@@ -220,13 +219,13 @@ msgid ""
 "You did not login within %(within)s. New instructions to login have been "
 "sent to %(email)s."
 msgstr ""
-"Die Anmeldung erfolgte nicht in %(within)s. Eine neue Anleitung wurde an "
+"Die Anmeldung erfolgte nicht innerhalb von %(within)s. Eine neue Anleitung wurde an "
 "%(email)s gesendet."
 
 #: flask_security/core.py:485
 #, python-format
 msgid "Instructions to login have been sent to %(email)s."
-msgstr "Eine Anleitung zur Anmeldung wurde an %(email)s gesendet."
+msgstr "Eine Anmeldeanleitung wurde an %(email)s gesendet."
 
 #: flask_security/core.py:488
 msgid "Invalid login token."
@@ -342,11 +341,11 @@ msgstr "Einmalpasswort wurde gesendet."
 msgid "Failed to send code. Please try again later"
 msgstr ""
 "Zusendung des Einmalpassworts fehlgeschlagen. Bitte versuchen Sie es "
-"später noch einmal."
+"später erneut"
 
 #: flask_security/core.py:539
 msgid "Your code has been confirmed"
-msgstr "Ihr Einmalpasswort wurde bestätigt."
+msgstr "Ihr Einmalpasswort wurde bestätigt"
 
 #: flask_security/core.py:541
 msgid "You successfully changed your two-factor method."
@@ -368,13 +367,13 @@ msgstr "Die Zwei-Faktor-Anmeldung wurde erfolgreich ausgeschaltet."
 #, python-format
 msgid "Setup must be completed within %(within)s. Please start over."
 msgstr ""
-"Einrichtung muss innerhalb %(within)s abgeschlossen werden. Bitte neu "
-"beginnen."
+"Die Einrichtung muss innerhalb von %(within)s abgeschlossen werden. "
+"Bitte erneut versuchen."
 
 #: flask_security/core.py:558
 #, python-format
 msgid "Currently active sign in options: %(method_list)s."
-msgstr "Momentan aktivierte Anmeldeoptionen: %(method_list)s."
+msgstr "Mögliche Anmeldeoptionen: %(method_list)s."
 
 #: flask_security/core.py:561
 msgid "Requested method is not valid"
@@ -391,7 +390,7 @@ msgstr "Sie müssen eine gültige Identität auswählen, um sich anzumelden"
 #: flask_security/core.py:568
 #, python-format
 msgid "Use this code to sign in: %(code)s"
-msgstr "Den folgenden Einmalpasswort zum anmelden verwenden: %(code)s"
+msgstr "Das folgende Einmalpasswort zum anmelden verwenden: %(code)s"
 
 #: flask_security/core.py:569
 msgid "You successfully changed your username"
@@ -426,16 +425,17 @@ msgstr "%(username)s ist bereits mit einem Benutzerkonto verknüpft."
 #: flask_security/core.py:591
 #, python-format
 msgid "Passkey operations must be completed within %(within)s. Please start over."
-msgstr ""
+msgstr "Der Anmeldevorgang per Passkey muss innerhalb von %(within)s abgeschlossen sein. "
+"Bitte erneut versuchen."
 
 #: flask_security/core.py:595
 msgid "Nickname for new passkey is required."
-msgstr "Für den Passkey ist ist ein Nickname erforderlich."
+msgstr "Für den neuen Passkey ist ein eindeutiger Bezeichner erforderlich."
 
 #: flask_security/core.py:599
 #, python-format
 msgid "%(name)s is already associated with a passkey."
-msgstr "%(name)s ist bereits mit einem Passkey verknüpft."
+msgstr "%(name)s ist bereits mit einem anderen Passkey verknüpft."
 
 #: flask_security/core.py:603
 #, python-format
@@ -445,24 +445,24 @@ msgstr "%(name)s ist für den aktuellen Benutzer nicht eingetragen."
 #: flask_security/core.py:607
 #, python-format
 msgid "Successfully deleted the passkey with name: %(name)s"
-msgstr "Der Passkey \"%(name)s\" wurde erfolgreich gelöscht"
+msgstr "Passkey erfolgreich gelöscht: %(name)s"
 
 #: flask_security/core.py:611
 #, python-format
 msgid "Successfully added the passkey with name: %(name)s"
-msgstr "Der Passkey \"%(name)s\" wurde erfolgreich hinzugefügt"
+msgstr "Passkey erfolgreich eingetragen: %(name)s"
 
 #: flask_security/core.py:615
 msgid "Passkey already registered."
-msgstr "Der Passkey ist bereits registriert."
+msgstr "Eingetragener Passkey."
 
 #: flask_security/core.py:619
 msgid "Unregistered passkey."
-msgstr "Der Passkey ist nicht registriert."
+msgstr "Nicht eingetragener Passkey."
 
 #: flask_security/core.py:623
 msgid "Passkey doesn't belong to any user."
-msgstr "Der Passkey ist mit keinem Benutzer verknüpft."
+msgstr "Der Passkey ist mit keinem Benutzerkonto verknüpft."
 
 #: flask_security/core.py:627
 #, python-format
@@ -472,8 +472,7 @@ msgstr "Konnte den Passkey nicht verifizieren: %(cause)s."
 #: flask_security/core.py:631
 msgid "Passkey not registered for this use (first or secondary)"
 msgstr ""
-"Der Passkey wurde nicht für diesen Anwendungsfall registriert (erster "
-"oder zweiter Faktor)"
+"Der Passkey wurde für diesen Anwendungsfall nicht eingetragen"
 
 #: flask_security/core.py:635
 msgid "Credential user handle didn't match"
@@ -482,7 +481,8 @@ msgstr "Passkey und Benutzer passen nicht zusammen."
 #: flask_security/core.py:639
 #, python-format
 msgid "Confirmation must be completed within %(within)s. Please start over."
-msgstr "Die Bestätigung muss binnen %(within)s erfolgen. Bitte von vorne beginnen."
+msgstr "Die Bestätigung muss innerhalb von %(within)s erfolgen. "
+"Bitte erneut versuchen."
 
 #: flask_security/core.py:643
 msgid "Change of email address confirmed"
@@ -500,7 +500,7 @@ msgstr ""
 #: flask_security/core.py:654
 msgid "If registered, your username will be sent to your email."
 msgstr ""
-"Falls bekannt, wird der Benutzername an die hinterlegte E-Mail-Adresse "
+"Falls bekannt, wird Ihr Benutzername an Ihre E-Mail-Adresse "
 "gesendet."
 
 #: flask_security/forms.py:62
@@ -619,7 +619,7 @@ msgstr "Bestätigen"
 
 #: flask_security/forms.py:89
 msgid "Submit Code"
-msgstr "Mit Einmalpasswort bestätigen"
+msgstr "Mit Authentisierungscode bestätigen"
 
 #: flask_security/forms.py:90
 msgid "Username"
@@ -663,11 +663,11 @@ msgstr "Verfügbare Methoden"
 
 #: flask_security/forms.py:959
 msgid "Disable two-factor authentication"
-msgstr "Schalte Zwei-Faktor-Anmeldung aus"
+msgstr "Deaktiviere Zwei-Faktor-Authentisierung"
 
 #: flask_security/forms.py:1050
 msgid "Trouble Accessing Your Account?/Lost Mobile Device?"
-msgstr "Probleme beim Zugriff auf Ihr Konto / Smartphone verloren?"
+msgstr "Probleme beim Zugriff auf Ihr Benutzerkonto? Smartphone verloren?"
 
 #: flask_security/forms.py:1052
 msgid "Contact Administrator"
@@ -723,7 +723,7 @@ msgstr "Lösche aktivierte Anmeldeoption"
 
 #: flask_security/webauthn.py:124 flask_security/webauthn.py:369
 msgid "Nickname"
-msgstr "Nickname"
+msgstr "Bezeichner"
 
 #: flask_security/webauthn.py:128
 msgid "Usage"
@@ -762,7 +762,7 @@ msgstr "Ändere Benutzernamen"
 #: flask_security/templates/security/_menu.html:34
 #: flask_security/templates/security/two_factor_setup.html:21
 msgid "Two-Factor Setup"
-msgstr "Einrichtung der Zwei-Faktor-Anmeldung"
+msgstr "Zwei-Faktor-Einrichtung"
 
 #: flask_security/templates/security/_menu.html:39
 msgid "Unified Signin Setup"
@@ -875,19 +875,20 @@ msgstr "Bestätigungslink erneut versenden"
 #: flask_security/templates/security/two_factor_select.html:1
 #: flask_security/templates/security/two_factor_select.html:7
 msgid "Select Two-Factor Method"
-msgstr "Wähle Zwei-Faktor-Methode"
+msgstr "Zwei-Faktor-Methode auswählen"
 
 #: flask_security/templates/security/two_factor_setup.html:28
 msgid "Two-Factor authentication adds an extra layer of security to your account"
 msgstr ""
-"Der zweite Faktor ergänzt die Sicherheit des Accounts um eine weitere "
-"Schicht"
+"Zwei-Faktor-Authentisierung bietet eine "
+"zusätzliche Sicherheitsebene für Ihr "
+"Benutzerkonto"
 
 #: flask_security/templates/security/two_factor_setup.html:29
 msgid "In addition to your username and password, you'll need to use a code."
 msgstr ""
 "Sie müssen zusätzlich zu Benutzername und Passwort ein Einmalpasswort "
-"angeben"
+"angeben."
 
 #: flask_security/templates/security/two_factor_setup.html:33
 #, python-format
@@ -902,11 +903,12 @@ msgid ""
 msgstr ""
 "Öffnen Sie die Authentisierungs-App z.B. auf Ihrem Smartphone und scannen"
 " Sie den folgenden QR-Code (oder geben Sie den unten stehenden "
-"Bestätigungscode ein), um den Empfang von Einmalpasswörtern zu beginnen"
+"Einrichtungsscode ein), um mit der Erzeugung von Authentisierungscodes zu"
+" beginnen:"
 
 #: flask_security/templates/security/two_factor_setup.html:55
 msgid "Two-Factor authentication code"
-msgstr "Einmalpasswort für Zwei-Faktor-Anmeldung"
+msgstr "Zwei-Faktor-Authentisierungscode"
 
 #: flask_security/templates/security/two_factor_setup.html:66
 msgid "Enter code to complete setup"
@@ -941,7 +943,7 @@ msgstr "Diese Anwendung unterstützt Passkeys."
 #: flask_security/templates/security/two_factor_verify_code.html:1
 #: flask_security/templates/security/two_factor_verify_code.html:7
 msgid "Two-Factor Authentication"
-msgstr "Zwei-Faktor-Anmeldung"
+msgstr "Zwei-Faktor-Authentisierung"
 
 #: flask_security/templates/security/two_factor_verify_code.html:8
 #, python-format
@@ -1004,11 +1006,11 @@ msgstr "Richte einen neuen Passkey ein"
 
 #: flask_security/templates/security/wan_register.html:19
 msgid "Start by providing a unique name for your passkey:"
-msgstr "Beginne mit einem eindeutigen Namen für den Passkey:"
+msgstr "Geben Sie zunächst einen eindeutigen Bezeichner für den Passkey ein:"
 
 #: flask_security/templates/security/wan_register.html:54
 msgid "Currently registered passkeys:"
-msgstr "Kürzlich verknüpfte Passkeys:"
+msgstr "Bereits eingetragene Passkeys:"
 
 #: flask_security/templates/security/wan_register.html:55
 #, python-format
@@ -1016,12 +1018,12 @@ msgid ""
 "Nickname: \"%s\" Usage: \"%s\" Transports: \"%s\" Discoverable: \"%s\" "
 "Device Type: \"%s\" Backed up? \"%s\" Last used on: %s"
 msgstr ""
-"Nickname: \"%s\" Verwendung: \"%s\" Transports: \"%s\" Auffindbar: \"%s\""
+"Bezeichner: \"%s\" Verwendung: \"%s\" Transports: \"%s\" Entdeckbar: \"%s\""
 " Gerätetyp: \"%s\" Gesichert? \"%s\" Zuletzt verwendet am: %s"
 
 #: flask_security/templates/security/wan_register.html:66
 msgid "Delete an Existing Passkey"
-msgstr "Lösche einen Passkey"
+msgstr "Lösche einen eingetragenen Passkey"
 
 #: flask_security/templates/security/wan_signin.html:4
 msgid "Sign In With A Passkey"
@@ -1060,8 +1062,8 @@ msgstr "Ihre derzeit hinterlegte E-Mail-Adresse lautet %(email)s."
 
 #: flask_security/templates/security/email/change_email_instructions.txt:8
 #, python-format
-msgid "Use %(link) to confirm your new email address."
-msgstr "Verwende %(link) um die E-Mail-Adresse zu bestätigen."
+msgid "Use %(link)s to confirm your new email address."
+msgstr "Verwenden Sie %(link)s um Ihre neue E-Mail-Adresse zu bstätigen."
 
 #: flask_security/templates/security/email/change_notice.html:1
 #: flask_security/templates/security/email/change_notice.txt:1
@@ -1243,6 +1245,7 @@ msgid ""
 "This account also has the following username associated with it: "
 "%(username)s"
 msgstr "Mit diesem Konto ist auch der folgende Benutzername verknüpft: "
+"%(username)s"
 
 #: flask_security/templates/security/email/welcome_existing.txt:25
 #, python-format
@@ -1277,24 +1280,6 @@ msgstr ""
 "Bitte starten Sie den Registrierungsprozess mit einem anderen "
 "Benutzernamen erneut."
 
-#~ msgid "You successfully confirmed password"
-#~ msgstr ""
-
-#~ msgid "Password confirmation is needed in order to access page"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Open your authenticator app on your "
-#~ "device and scan the following qrcode "
-#~ "to start receiving codes:"
-#~ msgstr ""
-
-#~ msgid "Or use the the link below:"
-#~ msgstr "Oder nutzen Sie den folgenden Link:"
-
-#~ msgid "Username not allowed"
-#~ msgstr ""
-
 #~ msgid ""
 #~ "In addition to your username and "
 #~ "password, you'll need to use a "
@@ -1304,9 +1289,6 @@ msgstr ""
 #~ "Passwort müssen Sie einen Code "
 #~ "verwenden, den wir Ihnen zusenden"
 
-#~ msgid "Please enter your authentication code"
-#~ msgstr "Bitte geben Sie den Authentisierungscode ein"
-
 #~ msgid "Setup Unified Sign In options"
 #~ msgstr "Single-User-Login einrichten"
 
@@ -1315,9 +1297,6 @@ msgstr ""
 
 #~ msgid "Please Enter Your Password"
 #~ msgstr "Bitte geben Sie Ihr Passwort ein"
-
-#~ msgid "Register WebAuthn Credential"
-#~ msgstr ""
 
 #~ msgid "No password is set for this user"
 #~ msgstr "Für diesen Benutzer ist kein Passwort gesetzt"
@@ -1374,15 +1353,6 @@ msgstr ""
 #~ "Sie sind nicht angemeldet. Bitte geben"
 #~ " Sie die korrekten Zugangsdaten ein."
 
-#~ msgid "Authenticator app"
-#~ msgstr ""
-
-#~ msgid "Email"
-#~ msgstr ""
-
-#~ msgid "None"
-#~ msgstr ""
-
 #~ msgid "Currently active sign in options:"
 #~ msgstr "Mögliche Anmeldemöglichkeiten:"
 
@@ -1395,9 +1365,6 @@ msgstr ""
 
 #~ msgid "To Which Phone Number Should We Send Code To?"
 #~ msgstr "An welche Telefonnummer sollen wir den Code senden?"
-
-#~ msgid "enter code"
-#~ msgstr ""
 
 #~ msgid "A mail was sent to us in order to reset your application account"
 #~ msgstr ""
@@ -1422,12 +1389,6 @@ msgstr ""
 #~ " die wir gerade an Sie gesendet "
 #~ "haben."
 
-#~ msgid "Two-factor Login"
-#~ msgstr "Zwei-Faktor-Anmeldung"
-
-#~ msgid "Two-factor Rescue"
-#~ msgstr "Zwei-Faktor-Wiederherstellung"
-
 #~ msgid "You must re-authenticate to access this endpoint"
 #~ msgstr "Bitte neu authentisieren, um auf diese Seite zuzugreifen."
 
@@ -1437,49 +1398,8 @@ msgstr ""
 #~ msgid "Disable two factor authentication"
 #~ msgstr "Deaktiviere Zwei-Faktor-Authentisierung"
 
-#~ msgid "Two Factor Setup"
-#~ msgstr "Zwei-Faktor-Einrichtung"
-
-#~ msgid "Sign in with "
-#~ msgstr "Anmelden mit "
-
-#~ msgid "Username recovery"
-#~ msgstr ""
-
-#~ msgid "Select Two Factor Method"
-#~ msgstr "Zwei-Faktor-Methode auswählen"
-
-#~ msgid ""
-#~ "Two-factor authentication adds an extra"
-#~ " layer of security to your account"
-#~ msgstr ""
-#~ "Zwei-Faktor-Authentisierung bietet eine "
-#~ "zusätzliche Sicherheitsebene für Ihr "
-#~ "Benutzerkonto"
-
-#~ msgid "Two factor authentication code"
-#~ msgstr "Zwei-Faktor-Authentisierungscode"
-
-#~ msgid "Two-factor Authentication"
-#~ msgstr "Zwei-Faktor-Authentisierung"
-
 #~ msgid "Please Reauthenticate"
 #~ msgstr "Bitte authentisieren Sie sich erneut"
-
-#~ msgid "Please Re-Authenticate Using Your WebAuthn Security Key"
-#~ msgstr "Bitte authentisieren Sie sich mit Ihrem WebAuthn-Sicherheitsschlüssel"
-
-#~ msgid "Change email"
-#~ msgstr ""
-
-#~ msgid "Change password"
-#~ msgstr "Passwort ändern"
-
-#~ msgid "Please confirm your new email address by clicking on the link below:"
-#~ msgstr ""
-
-#~ msgid "Confirm my new email"
-#~ msgstr ""
 
 #~ msgid "Confirm my account"
 #~ msgstr "Mein Konto bestätigen"
@@ -1493,9 +1413,6 @@ msgstr ""
 #~ msgid "Or use the link below:"
 #~ msgstr "Oder nutzen Sie den folgenden Link:"
 
-#~ msgid "Please confirm your new email through the link below:"
-#~ msgstr ""
-
 #~ msgid "Please confirm your email through the link below:"
 #~ msgstr "Bitte die E-Mail-Adresse durch den Link unten bestätigen:"
 
@@ -1508,9 +1425,6 @@ msgstr ""
 #~ msgid "If you forgot your password you can reset it"
 #~ msgstr "Wenn Sie Ihr Passwort vergessen habne, können Sie es"
 
-#~ msgid " here."
-#~ msgstr " hier zurücksetzen."
-
 #~ msgid "If you forgot your password you can reset it with the following link:"
 #~ msgstr ""
 #~ "Sollten Sie Ihr Passwort vergessen "
@@ -1521,18 +1435,6 @@ msgstr ""
 #~ msgstr "Code zur Anmeldung: %(code)s"
 
 #~ msgid ""
-#~ "If you forgot your password you "
-#~ "can reset it <a href=\"%(recovery_link)s\">"
-#~ " here.</a>"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you forgot your password you "
-#~ "can reset it with the following "
-#~ "link: %(recovery_link)s"
-#~ msgstr ""
-
-#~ msgid ""
 #~ "WebAuthn operation must be completed "
 #~ "within %(within)s. Please start over."
 #~ msgstr ""
@@ -1540,84 +1442,5 @@ msgstr ""
 #~ " %(within)s beendet werden. Bitte erneut"
 #~ " versuchen."
 
-#~ msgid "Nickname for new credential is required."
-#~ msgstr "Zum Setzen eines neuen Webauthn-Tokens ist ein Nickname erforderlich."
-
-#~ msgid "%(name)s is already associated with a credential."
-#~ msgstr "%(name)s ist bereits mit einem Webauthn-Token verknüpft."
-
-#~ msgid "Successfully deleted WebAuthn credential with name: %(name)s"
-#~ msgstr "Der Token '%(name)s' wurde entfernt."
-
-#~ msgid "Successfully added WebAuthn credential with name: %(name)s"
-#~ msgstr "Der WebAuthn-Token '%(name)s' wurde hinzugefügt."
-
-#~ msgid "WebAuthn credential id already registered."
-#~ msgstr "WebAuthn-Token-ID wurde bereits eingetragen."
-
 #~ msgid "Unregistered WebAuthn credential id."
 #~ msgstr "Nicht eingetragene WebAuthn-Token-ID."
-
-#~ msgid "WebAuthn credential doesn't belong to any user."
-#~ msgstr "WebAuthn-Token gehört zu keinem Benutzer."
-
-#~ msgid "Could not verify WebAuthn credential: %(cause)s."
-#~ msgstr "Konnte WebAuthn-Token nicht verifizieren: %(cause)s."
-
-#~ msgid "Credential not registered for this use (first or secondary)"
-#~ msgstr "WebAuthn-Token ist für diese Verwendung nicht eingetragen."
-
-#~ msgid "webauthn"
-#~ msgstr "WebAuthn"
-
-#~ msgid "WebAuthn Setup"
-#~ msgstr "WebAuthn-Einrichtung"
-
-#~ msgid "Forgot password"
-#~ msgstr "Passwort vergessen"
-
-#~ msgid "Use WebAuthn to Sign In"
-#~ msgstr "Nutze WebAuthn zur Anmeldung"
-
-#~ msgid "Sign in with WebAuthn"
-#~ msgstr "Anmelden mit WebAuthn"
-
-#~ msgid "WebAuthn"
-#~ msgstr "WebAuthn"
-
-#~ msgid "This application supports WebAuthn security keys."
-#~ msgstr "Diese Anwendung unterstützt WebAuthn-Sicherheitsschlüssel."
-
-#~ msgid "Use a WebAuthn Security Key to Reauthenticate"
-#~ msgstr ""
-#~ "Bitte nutzen Sie ein WebAuthn-"
-#~ "Sicherheitsschlüssel, um sich erneut zu "
-#~ "authentisieren"
-
-#~ msgid "Setup New WebAuthn Security Key"
-#~ msgstr "Neuen WebAuthn-Sicherheitsschlüssel einrichten"
-
-#~ msgid "Start by providing a unique name for your new security key:"
-#~ msgstr ""
-#~ "Geben Sie zunächst einen eindeutigen "
-#~ "Namen für den neuen Sicherheitsschlüssel "
-#~ "ein:"
-
-#~ msgid "Currently registered security keys:"
-#~ msgstr "Bereits registrierte Sicherheitsschlüssel:"
-
-#~ msgid "Delete Existing WebAuthn Security Key"
-#~ msgstr "Lösche existierenden WebAuth-Sicherheitsschlüssel"
-
-#~ msgid "WebAuthn Security Key"
-#~ msgstr ""
-
-#~ msgid "Sign In Using WebAuthn Security Key"
-#~ msgstr "Mit WebAuthn-Sicherheitsschlüssel anmelden"
-
-#~ msgid "Use Your WebAuthn Security Key as a Second Factor"
-#~ msgstr "Verwenden Sie Ihren WebAuthn-Sicherheitsschlüssel als zweiten Faktor"
-
-#~ msgid "Reauthenticate Using Your WebAuthn Security Key"
-#~ msgstr ""
-
