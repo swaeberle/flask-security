@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: jwag956@github.com\n"
 "POT-Creation-Date: 2025-11-18 11:20+0100\n"
 "PO-Revision-Date: 2022-04-05 13:50+0200\n"
-"Last-Translator: Stephan Wurm <stephan.wurm@a-eberle.de\n"
+"Last-Translator: Stephan Wurm <stephan.wurm@a-eberle.de>\n"
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
@@ -390,7 +390,7 @@ msgstr "Sie müssen eine gültige Identität auswählen, um sich anzumelden"
 #: flask_security/core.py:568
 #, python-format
 msgid "Use this code to sign in: %(code)s"
-msgstr "Das folgende Einmalpasswort zum anmelden verwenden: %(code)s"
+msgstr "Das folgende Einmalpasswort zum Anmelden verwenden: %(code)s"
 
 #: flask_security/core.py:569
 msgid "You successfully changed your username"
