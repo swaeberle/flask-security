@@ -361,7 +361,7 @@ msgstr "Ausgewählte Methode ist nicht gültig"
 
 #: flask_security/core.py:550
 msgid "You successfully disabled two-factor authorization."
-msgstr "Die Zwei-Faktor-Anmeldung wurde erfolgreich ausgeschaltet."
+msgstr "Die Zwei-Faktor-Authentisierung wurde erfolgreich deaktiviert."
 
 #: flask_security/core.py:554 flask_security/core.py:563
 #, python-format
@@ -476,7 +476,7 @@ msgstr ""
 
 #: flask_security/core.py:635
 msgid "Credential user handle didn't match"
-msgstr "Passkey und Benutzer passen nicht zusammen."
+msgstr "Passkey passt nicht zum Benutzer."
 
 #: flask_security/core.py:639
 #, python-format
@@ -615,7 +615,7 @@ msgstr "Einrichtung via SMS"
 
 #: flask_security/forms.py:88
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr "Ausführen"
 
 #: flask_security/forms.py:89
 msgid "Submit Code"
