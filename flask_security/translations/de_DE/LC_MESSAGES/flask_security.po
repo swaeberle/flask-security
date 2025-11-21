@@ -922,7 +922,7 @@ msgstr "gib numerischen Code ein"
 #: flask_security/templates/security/two_factor_setup.html:83
 #: flask_security/templates/security/wan_register.html:78
 msgid "This application supports setting up recovery codes."
-msgstr "Diese Anwendung unterstützt die Einrichtung von Wiederherstellungscodes."
+msgstr "Diese Anwendung unterstützt Wiederherstellungscodes."
 
 #: flask_security/templates/security/two_factor_setup.html:84
 #: flask_security/templates/security/two_factor_setup.html:92
