@@ -454,7 +454,7 @@ msgstr "Passkey erfolgreich eingetragen: %(name)s"
 
 #: flask_security/core.py:615
 msgid "Passkey already registered."
-msgstr "Eingetragener Passkey."
+msgstr "Der Passkey ist bereits eingetragen."
 
 #: flask_security/core.py:619
 msgid "Unregistered passkey."
@@ -472,7 +472,7 @@ msgstr "Konnte den Passkey nicht verifizieren: %(cause)s."
 #: flask_security/core.py:631
 msgid "Passkey not registered for this use (first or secondary)"
 msgstr ""
-"Der Passkey wurde für diesen Anwendungsfall nicht eingetragen"
+"Der Passkey wurde für diesen Anwendungsfall (erster oder zweiter Faktor) nicht eingetragen"
 
 #: flask_security/core.py:635
 msgid "Credential user handle didn't match"
@@ -500,7 +500,7 @@ msgstr ""
 #: flask_security/core.py:654
 msgid "If registered, your username will be sent to your email."
 msgstr ""
-"Falls bekannt, wird Ihr Benutzername an Ihre E-Mail-Adresse "
+"Falls bekannt, wird Ihr Benutzername an die hinterlegte E-Mail-Adresse "
 "gesendet."
 
 #: flask_security/forms.py:62
@@ -988,7 +988,7 @@ msgstr "Senden eines Einmalpassworts anfordern"
 #: flask_security/templates/security/verify.html:7
 #: flask_security/templates/security/wan_verify.html:9
 msgid "Reauthenticate"
-msgstr "Neuanmelden"
+msgstr "Neu anmelden"
 
 #: flask_security/templates/security/us_verify.html:18
 msgid "Code has been sent"
@@ -1063,7 +1063,7 @@ msgstr "Ihre derzeit hinterlegte E-Mail-Adresse lautet %(email)s."
 #: flask_security/templates/security/email/change_email_instructions.txt:8
 #, python-format
 msgid "Use %(link)s to confirm your new email address."
-msgstr "Verwenden Sie %(link)s um Ihre neue E-Mail-Adresse zu bstätigen."
+msgstr "Verwenden Sie %(link)s um Ihre neue E-Mail-Adresse zu bestätigen."
 
 #: flask_security/templates/security/email/change_notice.html:1
 #: flask_security/templates/security/email/change_notice.txt:1
